@@ -1,0 +1,87 @@
+:root {
+    --bg: #0f172a;
+    --glass: rgba(255, 255, 255, 0.05);
+    --x-color: #00d2ff; /* Neon Blue */
+    --o-color: #ff007f; /* Neon Pink */
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.game-container {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    padding: 3rem;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+}
+
+.status-text {
+    color: #94a3b8;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* The Grid */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.cell {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.cell:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.05);
+}
+
+/* Colors for X and O */
+.cell.x { color: var(--x-color); text-shadow: 0 0 15px var(--x-color); }
+.cell.o { color: var(--o-color); text-shadow: 0 0 15px var(--o-color); }
+
+.reset-btn {
+    padding: 12px 30px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reset-btn:hover {
+    background: white;
+    color: var(--bg);
+    box-shadow: 0 0 20px white;
+}
