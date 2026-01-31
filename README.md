@@ -23,6 +23,13 @@ A high-performance, interactive Tic-Tac-Toe web application developed as part of
 * **Mobile Optimized:** Built with **CSS Grid**, ensuring the game board scales perfectly across desktops, tablets, and mobile devices.
 * **State Reset:** One-click restart functionality that wipes the board and resets the game logic without reloading the page.
 
+###🧠 **What I Learned**
+Implementing game logic using JavaScript
+Managing application state (player turns, win/draw conditions)
+DOM manipulation for real-time UI updates
+Using CSS Grid for layout and responsive design
+Writing clean, readable front-end code
+
 ---
 
 ## 🛠️ Tech Stack
@@ -34,12 +41,6 @@ A high-performance, interactive Tic-Tac-Toe web application developed as part of
 | **Logic** | JavaScript ES6 (Arrays, Condition Matching, DOM Events) |
 | **Fonts** | Google Fonts (Montserrat & Share Tech Mono) |
 
-###🧠 **What I Learned**
-Implementing game logic using JavaScript
-Managing application state (player turns, win/draw conditions)
-DOM manipulation for real-time UI updates
-Using CSS Grid for layout and responsive design
-Writing clean, readable front-end code
 
 
 ## 📂 Project Structure
